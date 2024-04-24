@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function loc() {
+		location.href = "http://localhost:9090/webshop/First";
+	}
+</script>
+</head>
+<body>
+<h3>get요청방식</h3>
+<!--<form action="서버파일 또는 매핑 주소"method="get">-->
+<form action="http://localhost:9090/webshop/First" method="get">
+	<input type="submit" value="get전송">
+</form>
+<br>
+<a href="http://localhost:9090/webshop/First">클릭</a><br>
+<a href="http://localhost:9090/input3?u_name=홍길동&u_id=hongcha&u_pw=hongcha&u_addr=서울시 노원구 이젠빌딩&u_tel=010-9999-9999&u_age=100">클릭2</a>
+<br>
+<input type="button" value="클릭" onclick="loc()">
+
+<h3>post요청방식</h3>
+<form action="http://localhost:9090/webshop/First" method="post">
+	<input type="submit" value="post전송">
+</form>
+</body>
+</html>
